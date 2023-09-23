@@ -14,6 +14,6 @@ public class TopicSubscriber implements Observer {
     @Override
     public void update() {
         String message = (String) topic.getUpdate(this);
-        System.out.println(name + " received message " + message);
+        System.out.println(name + " received a message -> " + message);
     }
 }
