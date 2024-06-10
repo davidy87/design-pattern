@@ -1,11 +1,15 @@
-package singleton;
+package creational.singleton;
 
 public class Singleton {
-    private static class SingleInstanceHolder {
+
+    private Singleton() {
+    }
+
+    private static class SingletonHolder {
         private static final Singleton INSTANCE = new Singleton();
     }
 
     public static Singleton getInstance() {
-        return SingleInstanceHolder.INSTANCE;
+        return SingletonHolder.INSTANCE;
     }
 }
