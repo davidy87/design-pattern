@@ -10,11 +10,11 @@ public class PrototypeTest {
         Coffee coffee = new Coffee("grande", "iced", "americano", 4_500);
         System.out.println("Original coffee: " + coffee.hashCode());
 
-        List<Coffee> groupOrders = new ArrayList<>();
+        List<Prototype> groupOrders = new ArrayList<>();
         System.out.println("Making a group order...");
 
         for (int i = 1; i <= 5; i++) {
-            Coffee clone = coffee.clone();
+            Prototype clone = coffee.clone();
 
             if (clone != null) {
                 groupOrders.add(clone);

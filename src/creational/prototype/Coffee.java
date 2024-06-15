@@ -18,12 +18,7 @@ public class Coffee implements Prototype {
     }
 
     @Override
-    public Coffee clone() {
-        try {
-            return (Coffee) super.clone();
-        } catch (CloneNotSupportedException e) {
-            System.out.println("Failed to replicate coffee.");
-            return null;
-        }
+    public Prototype clone() {
+        return new Coffee(size, type, name, price);
     }
 }
