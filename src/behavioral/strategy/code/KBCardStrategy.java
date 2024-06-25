@@ -1,13 +1,16 @@
-package strategy;
+package behavioral.strategy.code;
 
-public class KAKAOCardStrategy implements PaymentStrategy {
+public class KBCardStrategy implements PaymentStrategy {
 
     private String name;
+
     private String cardNumber;
+
     private String cvv;
+
     private String dateOfExpiry;
 
-    public KAKAOCardStrategy(String name, String cardNumber, String cvv, String dateOfExpiry) {
+    public KBCardStrategy(String name, String cardNumber, String cvv, String dateOfExpiry) {
         this.name = name;
         this.cardNumber = cardNumber;
         this.cvv = cvv;
@@ -16,6 +19,6 @@ public class KAKAOCardStrategy implements PaymentStrategy {
 
     @Override
     public void pay(int amount) {
-        System.out.println(amount + " paid using KAKAO Card.");
+        System.out.println(amount + " paid using KB Card.");
     }
 }

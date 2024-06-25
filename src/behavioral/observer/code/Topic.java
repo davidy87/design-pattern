@@ -1,4 +1,4 @@
-package observer;
+package behavioral.observer.code;
 
 import java.util.ArrayList;
 import java.util.List;

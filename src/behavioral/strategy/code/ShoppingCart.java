@@ -1,4 +1,4 @@
-package strategy;
+package behavioral.strategy.code;
 
 import java.util.ArrayList;
 import java.util.List;

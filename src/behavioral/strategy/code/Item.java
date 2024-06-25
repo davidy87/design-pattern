@@ -1,8 +1,9 @@
-package strategy;
+package behavioral.strategy.code;
 
 public class Item {
 
     private String name;
+
     private int price;
 
     public Item(String name, int price) {

@@ -1,4 +1,4 @@
-package observer;
+package behavioral.observer.code;
 
 public class TopicSubscriber implements Observer {
 

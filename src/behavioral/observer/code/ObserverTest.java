@@ -1,8 +1,8 @@
-package observer;
+package behavioral.observer.code;
 
 public class ObserverTest {
 
-    public static void main(String[] args) {
+    private static void test() {
         Topic topic = new Topic();
         Observer a = new TopicSubscriber("a", topic);
         Observer b = new TopicSubscriber("b", topic);
@@ -11,7 +11,10 @@ public class ObserverTest {
         topic.register(a);
         topic.register(b);
         topic.register(c);
-
         topic.postMessage("This is for test");
+    }
+
+    public static void main(String[] args) {
+        test();
     }
 }
